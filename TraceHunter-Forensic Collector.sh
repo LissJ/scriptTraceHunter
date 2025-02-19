@@ -56,4 +56,4 @@ echo -e "\033[0;95m Listando o diretório raíz... \033[0m"
 ls -la / "$COLLECTED_DIR" > "$COLLECTED_DIR/root_dir_list.txt"
 
 # zipando
-tar -czf "TraceHunter_{Hostname}_{DataHora}.tar.gz" "$COLLECTED_DIR"
+tar -czf "TraceHunter_{$hostname}_{$date}.tar.gz" "$COLLECTED_DIR"
